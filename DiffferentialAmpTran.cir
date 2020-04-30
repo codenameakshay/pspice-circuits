@@ -1,0 +1,18 @@
+*Differential Amplifier with Active Load Current Source Biasing Transient Analysis
+
+R1 2 0 4.3K
+Rout 5 0 100
+Vp 6 0 DC 5V
+Vn 0 2 DC 5V
+Q1 7 4 3 Q2N2222
+Q2 5 8 3 Q2N2222
+Q3 7 7 6 Q2N2907
+Q4 5 7 6 Q2N2907
+Q5 2 2 1 Q2N2222
+Q6 3 2 1 Q2N2222
+Vid1 4 0 SIN(0 0.0125 1K)
+Vid2 8 0 SIN(0 -0.0125 1K)
+.TRAN 1MS 2MS
+.LIB NOM.LIB
+.PROBE
+.END

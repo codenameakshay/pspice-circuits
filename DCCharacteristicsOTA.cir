@@ -1,0 +1,11 @@
+DC Characteristics of OTA
+VP 7 0 DC 12V
+VN 4 0 DC -12V
+VIN 2 0 DC 1V
+VC 8 0 DC 1V
+RC 8 5 10MEG 
+X 0 2 2 7 4 5 OTA1
+.LIB C:\Cadence\SPB_16.6\tools\pspice\OTA1.LIB
+.DC VIN -1 1 10MV
+.PROBE
+.END

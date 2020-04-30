@@ -1,0 +1,15 @@
+Inverting Amplifier
+R1 1 2 1K
+R2 2 6 10K
+*VIN 1 0 DC 1V
+VIN 1 0 AC 1V
+*VIN 1 0 SIN (0 1M 1K)
+VP 7 0 DC 12V
+VN 4 0 DC -12V
+X 3 2 6 OPAMP1
+.LIB C:\Cadence\SPB_16.6\tools\pspice\OPAMP1.LIB
+*.DC VIN -15 15 1V
+.AC DEC 100 1 100K
+*.TRAN 0 5MS
+.PROBE
+.END

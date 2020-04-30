@@ -1,0 +1,10 @@
+Output Resistance of OTA
+VP 7 0 DC 12V
+VN 4 0 DC -12V
+VIN 2 0 DC 1V
+IB 5 0 DC 1MA
+X 0 2 2 7 4 5 OTA1
+.LIB C:\Cadence\SPB_16.6\tools\pspice\OTA1.LIB
+.DC VIN -50MV 50MV 1MV IB 1UA 1MA 10UA
+.PROBE
+.END

@@ -1,0 +1,18 @@
+*Differential Amplifier with Active Load Current Source Biasing
+
+R1 1 0 4.3K
+Rout 5 0 100
+Vdd 6 0 5
+Vss 0 2 5
+Q1 1 1 2 Q2N2222
+Q2 3 1 2 Q2N2222
+Q3 6 4 3 Q2N2222
+Q4 5 0 3 Q2N2222
+Q5 7 6 6 Q2N2907
+Q6 7 5 5 Q2N2907
+VIN 4 0 DC 0 AC 1M
+.DC VIN -3 3 0.01V
+*.AC DEC 60 100 100G
+.LIB NOM.LIB
+.PROBE
+.END
